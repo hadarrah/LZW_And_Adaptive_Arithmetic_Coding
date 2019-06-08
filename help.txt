@@ -1,0 +1,23 @@
+usage: HW_LZW_AAC.py [-h] [--input_txt INPUT_TXT] [--input_bin INPUT_BIN]
+                     [--output_txt OUTPUT_TXT] [--output_bin OUTPUT_BIN]
+                     [--dict DICT] [--mode {encode,decode}]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --input_txt INPUT_TXT
+                        path of input text file
+  --input_bin INPUT_BIN
+                        path of input bin file
+  --output_txt OUTPUT_TXT
+                        path of output text file
+  --output_bin OUTPUT_BIN
+                        path of output bin file
+  --dict DICT           name of the outputs file for final dictionary
+  --mode {encode,decode}
+                        name of the outputs file (txt & bin)
+
+
+Usage examples:
+    Encode: HW_LZW_AAC.py --input_txt input.txt --output_txt compressed.txt --output_bin compressed.bin --dict dict.txt --mode encode
+
+    Decode: HW_LZW_AAC.py --input_bin compressed.bin --output_txt output.txt --mode decode
